@@ -1,0 +1,34 @@
+$(document).ready(function(){
+    $('#b1').mouseenter(function(){
+        $(this).fadeToggle(3000)
+    });
+    $('#b1').mouseleave(function(){
+        $(this).fadeToggle(3000)
+    });
+    $('#b2').mouseenter(function(){
+        $(this).fadeToggle(3000)
+    });
+    $('#b2').mouseleave(function(){
+        $(this).fadeToggle(3000)
+    });
+    $('#b3').mouseenter(function(){
+        $(this).fadeToggle(3000)
+    });
+    $('#b3').mouseleave(function(){
+        $(this).fadeToggle(3000)
+    });
+    $('#b4').mouseenter(function(){
+        $(this).fadeToggle(3000)
+    });
+    $('#b4').mouseleave(function(){
+        $(this).fadeToggle(3000)
+    });
+    $('#b5').mouseenter(function(){
+        $(this).fadeToggle(3000)
+    });
+    $('#b5').mouseleave(function(){
+        $(this).fadeToggle(3000)
+    });
+    
+
+});
