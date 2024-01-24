@@ -1,5 +1,22 @@
 
+:root{
+    --background-color:#000;
+    --text-color:#999;
+    --title-color:#fff;
+}
 
+
+.dark-theme{
+    --background-color:#fff;
+    --text-color:#000;
+    --title-color:#000;
+}
+
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 2s,color 2s;
+}
 .container{
     margin: auto;
     width: 1320px;
@@ -8,10 +25,10 @@
 
 .outer
 {
-    width: 1320px;
-    height: 600px;
+    width: 1300px;
+    height: 800px;
     
-    background-image: url("../images/front.webp");
+    background-image: url("../images/cover.png") ;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -19,7 +36,7 @@
 .inner-text
 {
     text-align: center;
-    padding-top:350px ;
+    padding-top:35px ;
 }
 .box{
     height:250px;
@@ -45,4 +62,56 @@
 }
 .btn{
     background-color: darkgray;
+}
+
+.toggle-btn{
+    background: #454545;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.toggle-btn img{
+    width: 25px;
+    margin-left:0px ;
+}
+
+
+.image-box{
+    bottom: 2;
+    right: -10%;
+    position: absolute;
+}
+.pattern{
+    position: absolute;
+    top: -20%;
+    left: 25%;
+    display: flex;
+    transform: rotate(40deg);
+    z-index: -1;
+}
+.pattern img{
+    width: 550px;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    animation: move 1s linear infinite alternate-reverse;
+}
+.pattern img:nth-child(1){
+    transform: rotate(-75deg) translate(-70px,-50px);
+}
+.pattern img:nth-child(2){
+    transform: rotate(15deg) translate(00px,-40px);
+}
+@keyframes move {
+    100%{
+        margin-left: 40px;
+        margin-top: 20px;
+        opacity: 0.1;
+    }
+    
 }
