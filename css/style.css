@@ -13,26 +13,27 @@
 }
 
 body{
+    justify-content: center;
     background: var(--background-color);
     color: var(--text-color);
     transition: background 2s,color 2s;
 }
 .container{
-    margin: auto;
-    width: 1320px;
+    
 
 }
 
 .outer
 {
-    width: 1300px;
-    height: 800px;
+    margin: auto;
+    width: 1500px;
     
-    background-image: url("../images/cover.png") ;
     background-size: cover;
     background-repeat: no-repeat;
 
 }
+
+s
 .inner-text
 {
     text-align: center;
@@ -51,6 +52,7 @@ body{
     border: 3px solid gray ;
     border-radius: 10px;
     margin: 20px;
+    b
 }
 #b2,#b4{
     float:right;
@@ -60,7 +62,7 @@ body{
     margin: 20px;
     
 }
-.btn{
+.btn1{
     background-color: darkgray;
 }
 
@@ -68,11 +70,10 @@ body{
     background: #454545;
     color: black;
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 150px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
 }
 .toggle-btn img{
@@ -88,8 +89,6 @@ body{
 }
 .pattern{
     position: absolute;
-    top: -20%;
-    left: 25%;
     display: flex;
     transform: rotate(40deg);
     z-index: -1;
@@ -113,5 +112,38 @@ body{
         margin-top: 20px;
         opacity: 0.1;
     }
+    
+}
+
+
+
+body{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.cont{
+    min-width: 1400px;
+    
+}
+
+@media only screen and (max-width < 800px){
+    
+}
+
+#btn1:hover{
+    background-color: #00fffc;
+    box-shadow: 0 0 20px #00fffc,0 0 60px #00fffc;
+
+}
+#btn:hover{
+    background-color: #00fffc;
+    box-shadow: 0 0 20px #00fffc,0 0 60px #00fffc;
+
+}
+
+#imghover:hover{
+    box-shadow: 0 0 20px #00fffc,0 0 60px 5px #00fffc;
+
     
 }
